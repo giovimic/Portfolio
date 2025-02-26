@@ -1,30 +1,36 @@
 /* Aggiunta di Google Fonts */
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&display=swap');
 
 body {
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Montserrat', sans-serif;
     margin: 0;
     padding: 0;
     background-color: #f4f4f4;
     color: #333;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
-/* Navbar */
-nav {
-    background-color: #333;
+header {
+    background-color: #4CAF50;
     color: white;
-    padding: 1em;
+    width: 100%;
     text-align: center;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('images/header-bg.jpg') no-repeat center center/cover;
+    padding: 2em 0;
 }
 
 nav ul {
     list-style: none;
-    margin: 0;
     padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
 }
 
 nav ul li {
-    display: inline;
     margin: 0 1em;
 }
 
@@ -38,15 +44,6 @@ nav ul li a:hover {
     text-decoration: underline;
 }
 
-/* Header */
-header {
-    background-color: #4CAF50;
-    color: white;
-    padding: 4em 0;
-    text-align: center;
-    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('images/header-bg.jpg') no-repeat center center/cover;
-}
-
 .header-content h1 {
     font-size: 3em;
     margin: 0;
@@ -57,10 +54,15 @@ header {
     margin: 0.5em 0 0;
 }
 
-/* Section Styles */
+main {
+    width: 90%;
+    max-width: 1200px;
+    text-align: center;
+    margin: 2em auto;
+}
+
 section {
     padding: 4em 1em;
-    text-align: center;
 }
 
 .about,
@@ -71,7 +73,6 @@ section {
     padding: 2em;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    max-width: 800px;
 }
 
 .about img.profile-pic {
@@ -129,14 +130,11 @@ section {
     text-decoration: underline;
 }
 
-/* Footer */
 footer {
     background-color: #333;
     color: white;
     text-align: center;
     padding: 1em 0;
-    position: relative;
-    bottom: 0;
     width: 100%;
     margin-top: 2em;
 }
