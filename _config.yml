@@ -1,0 +1,15 @@
+title: Giovanni Miceli
+email: giovanni.miceli@yahoo.com
+logo: /images/rsz_profile.jpg
+# description: text below image
+# show_downloads: true
+theme: jekyll-theme-minimal
+# remote_theme: pages-themes/hacker@v0.2.0
+plugins:
+- jekyll-remote-theme
+sass:
+  load_paths:
+    - _sass
+  style: compressed
+includes:
+  - style.css
