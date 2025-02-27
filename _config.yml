@@ -12,4 +12,4 @@ sass:
     - _sass
   style: compressed
 includes:
-  - /stylesheets/style.css
+  - style.css
